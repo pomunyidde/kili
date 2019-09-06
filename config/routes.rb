@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'static_pages#index'
+  get 'Womens_World_Cup_France_2019', to: 'static_pages#Womens_World_Cup_France_2019'
 end
