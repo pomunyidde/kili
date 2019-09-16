@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter Boots Name</h1>
+  <%= simple_form_for @boot do |f| %>
+    <%= f.input :brand %>
+    <%= f.input :ambassador %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>  
