@@ -1,4 +1,4 @@
 class Boot < ApplicationRecord
-	belongs_to :brand
-	has_many :ambassador
+	validates :brand, :presence => true
+	validates :ambassador, :presence => true
 end

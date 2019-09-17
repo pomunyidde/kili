@@ -9,7 +9,7 @@ class BootsController < ApplicationController
 
 	def create
 		Boot.create(boot_params)
-		redirect_to root_path
+		redirect_to boots_path
 	end	
 
 	private
