@@ -1,6 +1,6 @@
 class BootsController < ApplicationController
 	def index
-		@boots = Boot.order("RANDOM()").first
+		@boots = Boot.order("RANDOM()").all
 	end	
 
 	def new
