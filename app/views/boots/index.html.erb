@@ -1,7 +1,10 @@
 <% @boots.each do |boot| %>
-    <br />
-	Brand: <%= boot.brand %>
+  <div class="booyah-box col-10 offset-1">
+	Brand: <h1><%= boot.brand %></h1>
 	<br />
-	Ambassador: <%= boot.ambassador %>
-	<br />
+	Ambassador: <h2><%= boot.ambassador %></h2>
+  </div>
+
+
+  <hr />
 <% end %>

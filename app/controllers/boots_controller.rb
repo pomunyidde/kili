@@ -1,6 +1,6 @@
 class BootsController < ApplicationController
 	def index
-		@boots = Boot.all
+		@boots = Boot.order("RANDOM()").first
 	end	
 
 	def new
@@ -16,6 +16,5 @@ class BootsController < ApplicationController
 
 	def boot_params
 		params.require(:boot).permit(:brand, :ambassador)
-	end
-		
+	end		
 end
